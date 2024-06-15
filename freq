@@ -1,0 +1,10 @@
+from collections import defaultdict
+dict1=[1,1,1,1,1,2,2,2,2,1,1,13,3,3,3,3,3,4]
+res=defaultdict(int)
+for i in range(len(dict1)):
+    if dict1[i] in res.keys():
+        res[dict1[i]]=res[dict1[i]]+1
+    else:
+        res[dict1[i]]=1
+print(res)
+            
